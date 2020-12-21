@@ -40,7 +40,6 @@ class ActiveStorageProvider extends React.Component<Props> {
     return new Headers({
       accept: 'application/json',
       'content-type': 'application/json',
-      ...csrfHeader(),
       ...normalizedHeaders,
     })
   }
